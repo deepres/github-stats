@@ -84,7 +84,7 @@ for (int i = 2; i <= pageCount; ++i){
     userRepos.add(getData(http, repoURL))
 }
 
-saveDate = new Date().format( 'yyyy-MM-dd' )
+saveDate = new Date().format( 'yyyyMMdd' )
 
 fRepoOut = new File("data/" + saveDate + "-" + userName + "-repos.csv")
 fRepoOut.write("date, repo, language, contributors, forks, stars\n")
